@@ -1,0 +1,405 @@
+doctype html
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(http-equiv="X-UA-Compatible", content="IE=edge")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        title Document
+        link(rel="stylesheet", href="style.css")
+    body 
+        main.main 
+            input#ch(type="checkbox")
+            .change-color
+            //rotation radious
+            input#r1(type="radio", name="rotation", checked)
+            input#r2(type="radio", name="rotation")
+            input#r3(type="radio", name="rotation")
+            input#r4(type="radio", name="rotation")
+            input#r5(type="radio", name="rotation")
+            input#r6(type="radio", name="rotation")
+
+            //Item expansion
+            input#t1(type="radio", name="items")
+            input#t2(type="radio", name="items")
+            input#t3(type="radio", name="items")
+            input#t4(type="radio", name="items")
+            input#t5(type="radio", name="items")
+            input#t6(type="radio", name="items")
+            input#t7(type="radio", name="items")
+            input#t8(type="radio", name="items")
+            input#t9(type="radio", name="items")
+
+            //Label close item expansion
+            input#t10(type="radio", name="items")
+
+            //Box expansion
+            input#c1(type="radio", name="convert", checked)
+            input#c2(type="radio", name="convert")
+
+            //Item Animation active/desactive
+            input#n1(type="radio", name="animation", checked)
+            input#n2(type="radio", name="animation")
+
+            //Labels box expansion
+            section.convert 
+                label.convert__element(for="c1")
+                label.convert__element(for="c2")
+            //Labels animation active/desactive
+            section.animate 
+                label.animate__element(for="n1")
+                    p Animation
+                label.animate__element(for="n2") 
+                    p No
+                    p Animation
+                    
+            //Box container
+            section.box
+                //Sides of box
+                .box__content
+                    //Items container
+                    .box__elements
+                        //Items of sides
+                        .box__elements__item
+                            .box__slide-items
+                                label.box__slide-items__label(for="t9") 
+                                label.box__slide-items__label(for="t2") 
+                            //Labels item expancion
+                            label.box__elements__label(for="t1")
+                            //Label close item expansion
+                            label.box__elements__label--close.box__elements__label--close--one(for="t10") 
+                        .box__elements__item
+                            .box__slide-items
+                                label.box__slide-items__label(for="t1") 
+                                label.box__slide-items__label(for="t3") 
+                            label.box__elements__label(for="t2")
+                            label.box__elements__label--close.box__elements__label--close--one(for="t10") 
+                        .box__elements__item 
+                            .box__slide-items
+                                label.box__slide-items__label(for="t2") 
+                                label.box__slide-items__label(for="t4") 
+                            label.box__elements__label(for="t3")
+                            label.box__elements__label--close.box__elements__label--close--one(for="t10") 
+                        .box__elements__item 
+                            .box__slide-items
+                                label.box__slide-items__label(for="t3") 
+                                label.box__slide-items__label(for="t5") 
+                            label.box__elements__label(for="t4")
+                            label.box__elements__label--close.box__elements__label--close--one(for="t10") 
+                        .box__elements__item 
+                            .box__slide-items
+                                label.box__slide-items__label(for="t4") 
+                                label.box__slide-items__label(for="t6") 
+                            label.box__elements__label(for="t5")
+                            label.box__elements__label--close.box__elements__label--close--one(for="t10") 
+                        .box__elements__item 
+                            .box__slide-items
+                                label.box__slide-items__label(for="t5") 
+                                label.box__slide-items__label(for="t7") 
+                            label.box__elements__label(for="t6")
+                            label.box__elements__label--close.box__elements__label--close--one(for="t10") 
+                        .box__elements__item 
+                            .box__slide-items
+                                label.box__slide-items__label(for="t6") 
+                                label.box__slide-items__label(for="t8") 
+                            label.box__elements__label(for="t7")
+                            label.box__elements__label--close.box__elements__label--close--one(for="t10") 
+                        .box__elements__item
+                            .box__slide-items
+                                label.box__slide-items__label(for="t7") 
+                                label.box__slide-items__label(for="t9")  
+                            label.box__elements__label(for="t8")
+                            label.box__elements__label--close.box__elements__label--close--one(for="t10") 
+                        .box__elements__item 
+                            .box__slide-items
+                                label.box__slide-items__label(for="t8") 
+                                label.box__slide-items__label(for="t1") 
+                            label.box__elements__label(for="t9")
+                            label.box__elements__label--close.box__elements__label--close--one(for="t10") 
+                .box__content
+                    .box__elements
+                        .box__elements__item 
+                            .box__slide-items
+                                label.box__slide-items__label(for="t9") 
+                                label.box__slide-items__label(for="t1") 
+                            label.box__elements__label(for="t1")
+                            label.box__elements__label--close.box__elements__label--close--two(for="t10") 
+                        .box__elements__item 
+                            .box__slide-items
+                                label.box__slide-items__label(for="t1") 
+                                label.box__slide-items__label(for="t3") 
+                            label.box__elements__label(for="t2")
+                            label.box__elements__label--close.box__elements__label--close--two(for="t10") 
+                        .box__elements__item 
+                            .box__slide-items
+                                label.box__slide-items__label(for="t2") 
+                                label.box__slide-items__label(for="t4") 
+                            label.box__elements__label(for="t3")
+                            label.box__elements__label--close.box__elements__label--close--two(for="t10") 
+                        .box__elements__item 
+                            .box__slide-items
+                                label.box__slide-items__label(for="t3") 
+                                label.box__slide-items__label(for="t5") 
+                            label.box__elements__label(for="t4")
+                            label.box__elements__label--close.box__elements__label--close--two(for="t10") 
+                        .box__elements__item 
+                            .box__slide-items
+                                label.box__slide-items__label(for="t4") 
+                                label.box__slide-items__label(for="t6") 
+                            label.box__elements__label(for="t5")
+                            label.box__elements__label--close.box__elements__label--close--two(for="t10") 
+                        .box__elements__item 
+                            .box__slide-items
+                                label.box__slide-items__label(for="t5") 
+                                label.box__slide-items__label(for="t7") 
+                            label.box__elements__label(for="t6")
+                            label.box__elements__label--close.box__elements__label--close--two(for="t10") 
+                        .box__elements__item 
+                            .box__slide-items
+                                label.box__slide-items__label(for="t6") 
+                                label.box__slide-items__label(for="t8") 
+                            label.box__elements__label(for="t7")
+                            label.box__elements__label--close.box__elements__label--close--two(for="t10") 
+                        .box__elements__item 
+                            .box__slide-items
+                                label.box__slide-items__label(for="t7") 
+                                label.box__slide-items__label(for="t9") 
+                            label.box__elements__label(for="t8")
+                            label.box__elements__label--close.box__elements__label--close--two(for="t10") 
+                        .box__elements__item 
+                            .box__slide-items
+                                label.box__slide-items__label(for="t8") 
+                                label.box__slide-items__label(for="t1") 
+                            label.box__elements__label(for="t9")
+                            label.box__elements__label--close.box__elements__label--close--two(for="t10") 
+                .box__content
+                    .box__elements
+                        .box__elements__item
+                            .box__slide-items
+                                label.box__slide-items__label(for="t9") 
+                                label.box__slide-items__label(for="t2") 
+                            label.box__elements__label(for="t1")
+                            label.box__elements__label--close.box__elements__label--close--three(for="t10") 
+                        .box__elements__item 
+                            .box__slide-items
+                                label.box__slide-items__label(for="t1") 
+                                label.box__slide-items__label(for="t3") 
+                            label.box__elements__label(for="t2")
+                            label.box__elements__label--close.box__elements__label--close--three(for="t10") 
+                        .box__elements__item 
+                            .box__slide-items
+                                label.box__slide-items__label(for="t2") 
+                                label.box__slide-items__label(for="t4") 
+                            label.box__elements__label(for="t3")
+                            label.box__elements__label--close.box__elements__label--close--three(for="t10") 
+                        .box__elements__item 
+                            .box__slide-items
+                                label.box__slide-items__label(for="t3") 
+                                label.box__slide-items__label(for="t5") 
+                            label.box__elements__label(for="t4")
+                            label.box__elements__label--close.box__elements__label--close--three(for="t10") 
+                        .box__elements__item 
+                            .box__slide-items
+                                label.box__slide-items__label(for="t4") 
+                                label.box__slide-items__label(for="t6") 
+                            label.box__elements__label(for="t5")
+                            label.box__elements__label--close.box__elements__label--close--three(for="t10") 
+                        .box__elements__item 
+                            .box__slide-items
+                                label.box__slide-items__label(for="t5") 
+                                label.box__slide-items__label(for="t7") 
+                            label.box__elements__label(for="t6")
+                            label.box__elements__label--close.box__elements__label--close--three(for="t10") 
+                        .box__elements__item 
+                            .box__slide-items
+                                label.box__slide-items__label(for="t6") 
+                                label.box__slide-items__label(for="t8") 
+                            label.box__elements__label(for="t7")
+                            label.box__elements__label--close.box__elements__label--close--three(for="t10") 
+                        .box__elements__item 
+                            .box__slide-items
+                                label.box__slide-items__label(for="t7") 
+                                label.box__slide-items__label(for="t9") 
+                            label.box__elements__label(for="t8")
+                            label.box__elements__label--close.box__elements__label--close--three(for="t10") 
+                        .box__elements__item 
+                            .box__slide-items
+                                label.box__slide-items__label(for="t8") 
+                                label.box__slide-items__label(for="t1") 
+                            label.box__elements__label(for="t9")
+                            label.box__elements__label--close.box__elements__label--close--three(for="t10") 
+                .box__content 
+                    .box__elements
+                        .box__elements__item
+                            .box__slide-items
+                                label.box__slide-items__label(for="t9") 
+                                label.box__slide-items__label(for="t2") 
+                            label.box__elements__label(for="t1")
+                            label.box__elements__label--close.box__elements__label--close--four(for="t10") 
+                        .box__elements__item 
+                            .box__slide-items
+                                label.box__slide-items__label(for="t1") 
+                                label.box__slide-items__label(for="t3") 
+                            label.box__elements__label(for="t2")
+                            label.box__elements__label--close.box__elements__label--close--four(for="t10") 
+                        .box__elements__item 
+                            .box__slide-items
+                                label.box__slide-items__label(for="t2") 
+                                label.box__slide-items__label(for="t4") 
+                            label.box__elements__label(for="t3")
+                            label.box__elements__label--close.box__elements__label--close--four(for="t10") 
+                        .box__elements__item 
+                            .box__slide-items
+                                label.box__slide-items__label(for="t3") 
+                                label.box__slide-items__label(for="t5") 
+                            label.box__elements__label(for="t4")
+                            label.box__elements__label--close.box__elements__label--close--four(for="t10") 
+                        .box__elements__item 
+                            .box__slide-items
+                                label.box__slide-items__label(for="t4") 
+                                label.box__slide-items__label(for="t6") 
+                            label.box__elements__label(for="t5")
+                            label.box__elements__label--close.box__elements__label--close--four(for="t10") 
+                        .box__elements__item 
+                            .box__slide-items
+                                label.box__slide-items__label(for="t5") 
+                                label.box__slide-items__label(for="t7") 
+                            label.box__elements__label(for="t6")
+                            label.box__elements__label--close.box__elements__label--close--four(for="t10") 
+                        .box__elements__item 
+                            .box__slide-items
+                                label.box__slide-items__label(for="t6") 
+                                label.box__slide-items__label(for="t8") 
+                            label.box__elements__label(for="t7")
+                            label.box__elements__label--close.box__elements__label--close--four(for="t10") 
+                        .box__elements__item 
+                            .box__slide-items
+                                label.box__slide-items__label(for="t7") 
+                                label.box__slide-items__label(for="t9") 
+                            label.box__elements__label(for="t8")
+                            label.box__elements__label--close.box__elements__label--close--four(for="t10") 
+                        .box__elements__item 
+                            .box__slide-items
+                                label.box__slide-items__label(for="t8") 
+                                label.box__slide-items__label(for="t1") 
+                            label.box__elements__label(for="t9")
+                            label.box__elements__label--close.box__elements__label--close--four(for="t10") 
+                .box__content
+                    .box__elements
+                        .box__elements__item
+                            .box__slide-items
+                                label.box__slide-items__label(for="") 
+                                label.box__slide-items__label(for="") 
+                            label.box__elements__label(for="t1")
+                            label.box__elements__label--close.box__elements__label--close--five(for="t10") 
+                        .box__elements__item 
+                            .box__slide-items
+                                label.box__slide-items__label(for="") 
+                                label.box__slide-items__label(for="") 
+                            label.box__elements__label(for="t2")
+                            label.box__elements__label--close.box__elements__label--close--five(for="t10") 
+                        .box__elements__item 
+                            .box__slide-items
+                                label.box__slide-items__label(for="") 
+                                label.box__slide-items__label(for="") 
+                            label.box__elements__label(for="t3")
+                            label.box__elements__label--close.box__elements__label--close--five(for="t10") 
+                        .box__elements__item 
+                            .box__slide-items
+                                label.box__slide-items__label(for="") 
+                                label.box__slide-items__label(for="") 
+                            label.box__elements__label(for="t4")
+                            label.box__elements__label--close.box__elements__label--close--five(for="t10") 
+                        .box__elements__item 
+                            .box__slide-items
+                                label.box__slide-items__label(for="") 
+                                label.box__slide-items__label(for="") 
+                            label.box__elements__label(for="t5")
+                            label.box__elements__label--close.box__elements__label--close--five(for="t10") 
+                        .box__elements__item 
+                            .box__slide-items
+                                label.box__slide-items__label(for="") 
+                                label.box__slide-items__label(for="") 
+                            label.box__elements__label(for="t6")
+                            label.box__elements__label--close.box__elements__label--close--five(for="t10") 
+                        .box__elements__item 
+                            .box__slide-items
+                                label.box__slide-items__label(for="") 
+                                label.box__slide-items__label(for="") 
+                            label.box__elements__label(for="t7")
+                            label.box__elements__label--close.box__elements__label--close--five(for="t10") 
+                        .box__elements__item 
+                            .box__slide-items
+                                label.box__slide-items__label(for="") 
+                                label.box__slide-items__label(for="") 
+                            label.box__elements__label(for="t8")
+                            label.box__elements__label--close.box__elements__label--close--five(for="t10") 
+                        .box__elements__item 
+                            .box__slide-items
+                                label.box__slide-items__label(for="") 
+                                label.box__slide-items__label(for="") 
+                            label.box__elements__label(for="t9")
+                            label.box__elements__label--close.box__elements__label--close--five(for="t10") 
+                .box__content
+                    .box__elements
+                        .box__elements__item 
+                            .box__slide-items
+                                label.box__slide-items__label(for="") 
+                                label.box__slide-items__label(for="") 
+                            label.box__elements__label(for="t1")
+                            label.box__elements__label--close.box__elements__label--close--six(for="t10") 
+                        .box__elements__item
+                            .box__slide-items
+                                label.box__slide-items__label(for="") 
+                                label.box__slide-items__label(for="") 
+                            label.box__elements__label(for="t2")
+                            label.box__elements__label--close.box__elements__label--close--six(for="t10") 
+                        .box__elements__item 
+                            .box__slide-items
+                                label.box__slide-items__label(for="") 
+                                label.box__slide-items__label(for="") 
+                            label.box__elements__label(for="t3")
+                            label.box__elements__label--close.box__elements__label--close--six(for="t10") 
+                        .box__elements__item 
+                            .box__slide-items
+                                label.box__slide-items__label(for="") 
+                                label.box__slide-items__label(for="") 
+                            label.box__elements__label(for="t4")
+                            label.box__elements__label--close.box__elements__label--close--six(for="t10") 
+                        .box__elements__item 
+                            .box__slide-items
+                                label.box__slide-items__label(for="") 
+                                label.box__slide-items__label(for="") 
+                            label.box__elements__label(for="t5")
+                            label.box__elements__label--close.box__elements__label--close--six(for="t10") 
+                        .box__elements__item 
+                            .box__slide-items
+                                label.box__slide-items__label(for="") 
+                                label.box__slide-items__label(for="") 
+                            label.box__elements__label(for="t6")
+                            label.box__elements__label--close.box__elements__label--close--six(for="t10") 
+                        .box__elements__item 
+                            .box__slide-items
+                                label.box__slide-items__label(for="") 
+                                label.box__slide-items__label(for="") 
+                            label.box__elements__label(for="t7")
+                            label.box__elements__label--close.box__elements__label--close--six(for="t10") 
+                        .box__elements__item 
+                            .box__slide-items
+                                label.box__slide-items__label(for="") 
+                                label.box__slide-items__label(for="") 
+                            label.box__elements__label(for="t8")
+                            label.box__elements__label--close.box__elements__label--close--six(for="t10") 
+                        .box__elements__item 
+                            .box__slide-items
+                                label.box__slide-items__label(for="") 
+                                label.box__slide-items__label(for="") 
+                            label.box__elements__label(for="t9")
+                            label.box__elements__label--close.box__elements__label--close--six(for="t10") 
+            //Labels box Rotation
+            section.rotation 
+                label.rotation__label(for="r1") 
+                label.rotation__label(for="r2") 
+                label.rotation__label(for="r3") 
+                label.rotation__label(for="r4") 
+                label.rotation__label(for="r5") 
+                label.rotation__label(for="r6") 

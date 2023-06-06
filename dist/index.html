@@ -1,0 +1,529 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body> 
+    <main class="main"> 
+      <input id="ch" type="checkbox">
+      <div class="change-color"></div>
+      <!--rotation radious-->
+      <input id="r1" type="radio" name="rotation" checked>
+      <input id="r2" type="radio" name="rotation">
+      <input id="r3" type="radio" name="rotation">
+      <input id="r4" type="radio" name="rotation">
+      <input id="r5" type="radio" name="rotation">
+      <input id="r6" type="radio" name="rotation">
+      <!--Item expansion-->
+      <input id="t1" type="radio" name="items">
+      <input id="t2" type="radio" name="items">
+      <input id="t3" type="radio" name="items">
+      <input id="t4" type="radio" name="items">
+      <input id="t5" type="radio" name="items">
+      <input id="t6" type="radio" name="items">
+      <input id="t7" type="radio" name="items">
+      <input id="t8" type="radio" name="items">
+      <input id="t9" type="radio" name="items">
+      <!--Label close item expansion-->
+      <input id="t10" type="radio" name="items">
+      <!--Box expansion-->
+      <input id="c1" type="radio" name="convert" checked>
+      <input id="c2" type="radio" name="convert">
+      <!--Item Animation active/desactive-->
+      <input id="n1" type="radio" name="animation" checked>
+      <input id="n2" type="radio" name="animation">
+      <!--Labels box expansion-->
+      <section class="convert"> 
+        <label class="convert__element" for="c1"></label>
+        <label class="convert__element" for="c2"></label>
+      </section>
+      <!--Labels animation active/desactive-->
+      <section class="animate"> 
+        <label class="animate__element" for="n1">
+          <p>Animation</p>
+        </label>
+        <label class="animate__element" for="n2"> 
+          <p>No</p>
+          <p>Animation</p>
+        </label>
+      </section>
+      <!--Box container-->
+      <section class="box">
+        <!--Sides of box-->
+        <div class="box__content">
+          <!--Items container-->
+          <div class="box__elements">
+            <!--Items of sides-->
+            <div class="box__elements__item">
+              <div class="box__slide-items">
+                <label class="box__slide-items__label" for="t9"> </label>
+                <label class="box__slide-items__label" for="t2"> </label>
+              </div>
+              <!--Labels item expancion-->
+              <label class="box__elements__label" for="t1"></label>
+              <!--Label close item expansion-->
+              <label class="box__elements__label--close box__elements__label--close--one" for="t10"> </label>
+            </div>
+            <div class="box__elements__item">
+              <div class="box__slide-items">
+                <label class="box__slide-items__label" for="t1"> </label>
+                <label class="box__slide-items__label" for="t3"> </label>
+              </div>
+              <label class="box__elements__label" for="t2"></label>
+              <label class="box__elements__label--close box__elements__label--close--one" for="t10"> </label>
+            </div>
+            <div class="box__elements__item"> 
+              <div class="box__slide-items">
+                <label class="box__slide-items__label" for="t2"> </label>
+                <label class="box__slide-items__label" for="t4"> </label>
+              </div>
+              <label class="box__elements__label" for="t3"></label>
+              <label class="box__elements__label--close box__elements__label--close--one" for="t10"> </label>
+            </div>
+            <div class="box__elements__item"> 
+              <div class="box__slide-items">
+                <label class="box__slide-items__label" for="t3"> </label>
+                <label class="box__slide-items__label" for="t5"> </label>
+              </div>
+              <label class="box__elements__label" for="t4"></label>
+              <label class="box__elements__label--close box__elements__label--close--one" for="t10"> </label>
+            </div>
+            <div class="box__elements__item"> 
+              <div class="box__slide-items">
+                <label class="box__slide-items__label" for="t4"> </label>
+                <label class="box__slide-items__label" for="t6"> </label>
+              </div>
+              <label class="box__elements__label" for="t5"></label>
+              <label class="box__elements__label--close box__elements__label--close--one" for="t10"> </label>
+            </div>
+            <div class="box__elements__item"> 
+              <div class="box__slide-items">
+                <label class="box__slide-items__label" for="t5"> </label>
+                <label class="box__slide-items__label" for="t7"> </label>
+              </div>
+              <label class="box__elements__label" for="t6"></label>
+              <label class="box__elements__label--close box__elements__label--close--one" for="t10"> </label>
+            </div>
+            <div class="box__elements__item"> 
+              <div class="box__slide-items">
+                <label class="box__slide-items__label" for="t6"> </label>
+                <label class="box__slide-items__label" for="t8"> </label>
+              </div>
+              <label class="box__elements__label" for="t7"></label>
+              <label class="box__elements__label--close box__elements__label--close--one" for="t10"> </label>
+            </div>
+            <div class="box__elements__item">
+              <div class="box__slide-items">
+                <label class="box__slide-items__label" for="t7"> </label>
+                <label class="box__slide-items__label" for="t9"> </label>
+              </div>
+              <label class="box__elements__label" for="t8"></label>
+              <label class="box__elements__label--close box__elements__label--close--one" for="t10"> </label>
+            </div>
+            <div class="box__elements__item"> 
+              <div class="box__slide-items">
+                <label class="box__slide-items__label" for="t8"> </label>
+                <label class="box__slide-items__label" for="t1"> </label>
+              </div>
+              <label class="box__elements__label" for="t9"></label>
+              <label class="box__elements__label--close box__elements__label--close--one" for="t10"> </label>
+            </div>
+          </div>
+        </div>
+        <div class="box__content">
+          <div class="box__elements">
+            <div class="box__elements__item"> 
+              <div class="box__slide-items">
+                <label class="box__slide-items__label" for="t9"> </label>
+                <label class="box__slide-items__label" for="t1"> </label>
+              </div>
+              <label class="box__elements__label" for="t1"></label>
+              <label class="box__elements__label--close box__elements__label--close--two" for="t10"> </label>
+            </div>
+            <div class="box__elements__item"> 
+              <div class="box__slide-items">
+                <label class="box__slide-items__label" for="t1"> </label>
+                <label class="box__slide-items__label" for="t3"> </label>
+              </div>
+              <label class="box__elements__label" for="t2"></label>
+              <label class="box__elements__label--close box__elements__label--close--two" for="t10"> </label>
+            </div>
+            <div class="box__elements__item"> 
+              <div class="box__slide-items">
+                <label class="box__slide-items__label" for="t2"> </label>
+                <label class="box__slide-items__label" for="t4"> </label>
+              </div>
+              <label class="box__elements__label" for="t3"></label>
+              <label class="box__elements__label--close box__elements__label--close--two" for="t10"> </label>
+            </div>
+            <div class="box__elements__item"> 
+              <div class="box__slide-items">
+                <label class="box__slide-items__label" for="t3"> </label>
+                <label class="box__slide-items__label" for="t5"> </label>
+              </div>
+              <label class="box__elements__label" for="t4"></label>
+              <label class="box__elements__label--close box__elements__label--close--two" for="t10"> </label>
+            </div>
+            <div class="box__elements__item"> 
+              <div class="box__slide-items">
+                <label class="box__slide-items__label" for="t4"> </label>
+                <label class="box__slide-items__label" for="t6"> </label>
+              </div>
+              <label class="box__elements__label" for="t5"></label>
+              <label class="box__elements__label--close box__elements__label--close--two" for="t10"> </label>
+            </div>
+            <div class="box__elements__item"> 
+              <div class="box__slide-items">
+                <label class="box__slide-items__label" for="t5"> </label>
+                <label class="box__slide-items__label" for="t7"> </label>
+              </div>
+              <label class="box__elements__label" for="t6"></label>
+              <label class="box__elements__label--close box__elements__label--close--two" for="t10"> </label>
+            </div>
+            <div class="box__elements__item"> 
+              <div class="box__slide-items">
+                <label class="box__slide-items__label" for="t6"> </label>
+                <label class="box__slide-items__label" for="t8"> </label>
+              </div>
+              <label class="box__elements__label" for="t7"></label>
+              <label class="box__elements__label--close box__elements__label--close--two" for="t10"> </label>
+            </div>
+            <div class="box__elements__item"> 
+              <div class="box__slide-items">
+                <label class="box__slide-items__label" for="t7"> </label>
+                <label class="box__slide-items__label" for="t9"> </label>
+              </div>
+              <label class="box__elements__label" for="t8"></label>
+              <label class="box__elements__label--close box__elements__label--close--two" for="t10"> </label>
+            </div>
+            <div class="box__elements__item"> 
+              <div class="box__slide-items">
+                <label class="box__slide-items__label" for="t8"> </label>
+                <label class="box__slide-items__label" for="t1"> </label>
+              </div>
+              <label class="box__elements__label" for="t9"></label>
+              <label class="box__elements__label--close box__elements__label--close--two" for="t10"> </label>
+            </div>
+          </div>
+        </div>
+        <div class="box__content">
+          <div class="box__elements">
+            <div class="box__elements__item">
+              <div class="box__slide-items">
+                <label class="box__slide-items__label" for="t9"> </label>
+                <label class="box__slide-items__label" for="t2"> </label>
+              </div>
+              <label class="box__elements__label" for="t1"></label>
+              <label class="box__elements__label--close box__elements__label--close--three" for="t10"> </label>
+            </div>
+            <div class="box__elements__item"> 
+              <div class="box__slide-items">
+                <label class="box__slide-items__label" for="t1"> </label>
+                <label class="box__slide-items__label" for="t3"> </label>
+              </div>
+              <label class="box__elements__label" for="t2"></label>
+              <label class="box__elements__label--close box__elements__label--close--three" for="t10"> </label>
+            </div>
+            <div class="box__elements__item"> 
+              <div class="box__slide-items">
+                <label class="box__slide-items__label" for="t2"> </label>
+                <label class="box__slide-items__label" for="t4"> </label>
+              </div>
+              <label class="box__elements__label" for="t3"></label>
+              <label class="box__elements__label--close box__elements__label--close--three" for="t10"> </label>
+            </div>
+            <div class="box__elements__item"> 
+              <div class="box__slide-items">
+                <label class="box__slide-items__label" for="t3"> </label>
+                <label class="box__slide-items__label" for="t5"> </label>
+              </div>
+              <label class="box__elements__label" for="t4"></label>
+              <label class="box__elements__label--close box__elements__label--close--three" for="t10"> </label>
+            </div>
+            <div class="box__elements__item"> 
+              <div class="box__slide-items">
+                <label class="box__slide-items__label" for="t4"> </label>
+                <label class="box__slide-items__label" for="t6"> </label>
+              </div>
+              <label class="box__elements__label" for="t5"></label>
+              <label class="box__elements__label--close box__elements__label--close--three" for="t10"> </label>
+            </div>
+            <div class="box__elements__item"> 
+              <div class="box__slide-items">
+                <label class="box__slide-items__label" for="t5"> </label>
+                <label class="box__slide-items__label" for="t7"> </label>
+              </div>
+              <label class="box__elements__label" for="t6"></label>
+              <label class="box__elements__label--close box__elements__label--close--three" for="t10"> </label>
+            </div>
+            <div class="box__elements__item"> 
+              <div class="box__slide-items">
+                <label class="box__slide-items__label" for="t6"> </label>
+                <label class="box__slide-items__label" for="t8"> </label>
+              </div>
+              <label class="box__elements__label" for="t7"></label>
+              <label class="box__elements__label--close box__elements__label--close--three" for="t10"> </label>
+            </div>
+            <div class="box__elements__item"> 
+              <div class="box__slide-items">
+                <label class="box__slide-items__label" for="t7"> </label>
+                <label class="box__slide-items__label" for="t9"> </label>
+              </div>
+              <label class="box__elements__label" for="t8"></label>
+              <label class="box__elements__label--close box__elements__label--close--three" for="t10"> </label>
+            </div>
+            <div class="box__elements__item"> 
+              <div class="box__slide-items">
+                <label class="box__slide-items__label" for="t8"> </label>
+                <label class="box__slide-items__label" for="t1"> </label>
+              </div>
+              <label class="box__elements__label" for="t9"></label>
+              <label class="box__elements__label--close box__elements__label--close--three" for="t10"> </label>
+            </div>
+          </div>
+        </div>
+        <div class="box__content"> 
+          <div class="box__elements">
+            <div class="box__elements__item">
+              <div class="box__slide-items">
+                <label class="box__slide-items__label" for="t9"> </label>
+                <label class="box__slide-items__label" for="t2"> </label>
+              </div>
+              <label class="box__elements__label" for="t1"></label>
+              <label class="box__elements__label--close box__elements__label--close--four" for="t10"> </label>
+            </div>
+            <div class="box__elements__item"> 
+              <div class="box__slide-items">
+                <label class="box__slide-items__label" for="t1"> </label>
+                <label class="box__slide-items__label" for="t3"> </label>
+              </div>
+              <label class="box__elements__label" for="t2"></label>
+              <label class="box__elements__label--close box__elements__label--close--four" for="t10"> </label>
+            </div>
+            <div class="box__elements__item"> 
+              <div class="box__slide-items">
+                <label class="box__slide-items__label" for="t2"> </label>
+                <label class="box__slide-items__label" for="t4"> </label>
+              </div>
+              <label class="box__elements__label" for="t3"></label>
+              <label class="box__elements__label--close box__elements__label--close--four" for="t10"> </label>
+            </div>
+            <div class="box__elements__item"> 
+              <div class="box__slide-items">
+                <label class="box__slide-items__label" for="t3"> </label>
+                <label class="box__slide-items__label" for="t5"> </label>
+              </div>
+              <label class="box__elements__label" for="t4"></label>
+              <label class="box__elements__label--close box__elements__label--close--four" for="t10"> </label>
+            </div>
+            <div class="box__elements__item"> 
+              <div class="box__slide-items">
+                <label class="box__slide-items__label" for="t4"> </label>
+                <label class="box__slide-items__label" for="t6"> </label>
+              </div>
+              <label class="box__elements__label" for="t5"></label>
+              <label class="box__elements__label--close box__elements__label--close--four" for="t10"> </label>
+            </div>
+            <div class="box__elements__item"> 
+              <div class="box__slide-items">
+                <label class="box__slide-items__label" for="t5"> </label>
+                <label class="box__slide-items__label" for="t7"> </label>
+              </div>
+              <label class="box__elements__label" for="t6"></label>
+              <label class="box__elements__label--close box__elements__label--close--four" for="t10"> </label>
+            </div>
+            <div class="box__elements__item"> 
+              <div class="box__slide-items">
+                <label class="box__slide-items__label" for="t6"> </label>
+                <label class="box__slide-items__label" for="t8"> </label>
+              </div>
+              <label class="box__elements__label" for="t7"></label>
+              <label class="box__elements__label--close box__elements__label--close--four" for="t10"> </label>
+            </div>
+            <div class="box__elements__item"> 
+              <div class="box__slide-items">
+                <label class="box__slide-items__label" for="t7"> </label>
+                <label class="box__slide-items__label" for="t9"> </label>
+              </div>
+              <label class="box__elements__label" for="t8"></label>
+              <label class="box__elements__label--close box__elements__label--close--four" for="t10"> </label>
+            </div>
+            <div class="box__elements__item"> 
+              <div class="box__slide-items">
+                <label class="box__slide-items__label" for="t8"> </label>
+                <label class="box__slide-items__label" for="t1"> </label>
+              </div>
+              <label class="box__elements__label" for="t9"></label>
+              <label class="box__elements__label--close box__elements__label--close--four" for="t10"> </label>
+            </div>
+          </div>
+        </div>
+        <div class="box__content">
+          <div class="box__elements">
+            <div class="box__elements__item">
+              <div class="box__slide-items">
+                <label class="box__slide-items__label" for=""> </label>
+                <label class="box__slide-items__label" for=""> </label>
+              </div>
+              <label class="box__elements__label" for="t1"></label>
+              <label class="box__elements__label--close box__elements__label--close--five" for="t10"> </label>
+            </div>
+            <div class="box__elements__item"> 
+              <div class="box__slide-items">
+                <label class="box__slide-items__label" for=""> </label>
+                <label class="box__slide-items__label" for=""> </label>
+              </div>
+              <label class="box__elements__label" for="t2"></label>
+              <label class="box__elements__label--close box__elements__label--close--five" for="t10"> </label>
+            </div>
+            <div class="box__elements__item"> 
+              <div class="box__slide-items">
+                <label class="box__slide-items__label" for=""> </label>
+                <label class="box__slide-items__label" for=""> </label>
+              </div>
+              <label class="box__elements__label" for="t3"></label>
+              <label class="box__elements__label--close box__elements__label--close--five" for="t10"> </label>
+            </div>
+            <div class="box__elements__item"> 
+              <div class="box__slide-items">
+                <label class="box__slide-items__label" for=""> </label>
+                <label class="box__slide-items__label" for=""> </label>
+              </div>
+              <label class="box__elements__label" for="t4"></label>
+              <label class="box__elements__label--close box__elements__label--close--five" for="t10"> </label>
+            </div>
+            <div class="box__elements__item"> 
+              <div class="box__slide-items">
+                <label class="box__slide-items__label" for=""> </label>
+                <label class="box__slide-items__label" for=""> </label>
+              </div>
+              <label class="box__elements__label" for="t5"></label>
+              <label class="box__elements__label--close box__elements__label--close--five" for="t10"> </label>
+            </div>
+            <div class="box__elements__item"> 
+              <div class="box__slide-items">
+                <label class="box__slide-items__label" for=""> </label>
+                <label class="box__slide-items__label" for=""> </label>
+              </div>
+              <label class="box__elements__label" for="t6"></label>
+              <label class="box__elements__label--close box__elements__label--close--five" for="t10"> </label>
+            </div>
+            <div class="box__elements__item"> 
+              <div class="box__slide-items">
+                <label class="box__slide-items__label" for=""> </label>
+                <label class="box__slide-items__label" for=""> </label>
+              </div>
+              <label class="box__elements__label" for="t7"></label>
+              <label class="box__elements__label--close box__elements__label--close--five" for="t10"> </label>
+            </div>
+            <div class="box__elements__item"> 
+              <div class="box__slide-items">
+                <label class="box__slide-items__label" for=""> </label>
+                <label class="box__slide-items__label" for=""> </label>
+              </div>
+              <label class="box__elements__label" for="t8"></label>
+              <label class="box__elements__label--close box__elements__label--close--five" for="t10"> </label>
+            </div>
+            <div class="box__elements__item"> 
+              <div class="box__slide-items">
+                <label class="box__slide-items__label" for=""> </label>
+                <label class="box__slide-items__label" for=""> </label>
+              </div>
+              <label class="box__elements__label" for="t9"></label>
+              <label class="box__elements__label--close box__elements__label--close--five" for="t10"> </label>
+            </div>
+          </div>
+        </div>
+        <div class="box__content">
+          <div class="box__elements">
+            <div class="box__elements__item"> 
+              <div class="box__slide-items">
+                <label class="box__slide-items__label" for=""> </label>
+                <label class="box__slide-items__label" for=""> </label>
+              </div>
+              <label class="box__elements__label" for="t1"></label>
+              <label class="box__elements__label--close box__elements__label--close--six" for="t10"> </label>
+            </div>
+            <div class="box__elements__item">
+              <div class="box__slide-items">
+                <label class="box__slide-items__label" for=""> </label>
+                <label class="box__slide-items__label" for=""> </label>
+              </div>
+              <label class="box__elements__label" for="t2"></label>
+              <label class="box__elements__label--close box__elements__label--close--six" for="t10"> </label>
+            </div>
+            <div class="box__elements__item"> 
+              <div class="box__slide-items">
+                <label class="box__slide-items__label" for=""> </label>
+                <label class="box__slide-items__label" for=""> </label>
+              </div>
+              <label class="box__elements__label" for="t3"></label>
+              <label class="box__elements__label--close box__elements__label--close--six" for="t10"> </label>
+            </div>
+            <div class="box__elements__item"> 
+              <div class="box__slide-items">
+                <label class="box__slide-items__label" for=""> </label>
+                <label class="box__slide-items__label" for=""> </label>
+              </div>
+              <label class="box__elements__label" for="t4"></label>
+              <label class="box__elements__label--close box__elements__label--close--six" for="t10"> </label>
+            </div>
+            <div class="box__elements__item"> 
+              <div class="box__slide-items">
+                <label class="box__slide-items__label" for=""> </label>
+                <label class="box__slide-items__label" for=""> </label>
+              </div>
+              <label class="box__elements__label" for="t5"></label>
+              <label class="box__elements__label--close box__elements__label--close--six" for="t10"> </label>
+            </div>
+            <div class="box__elements__item"> 
+              <div class="box__slide-items">
+                <label class="box__slide-items__label" for=""> </label>
+                <label class="box__slide-items__label" for=""> </label>
+              </div>
+              <label class="box__elements__label" for="t6"></label>
+              <label class="box__elements__label--close box__elements__label--close--six" for="t10"> </label>
+            </div>
+            <div class="box__elements__item"> 
+              <div class="box__slide-items">
+                <label class="box__slide-items__label" for=""> </label>
+                <label class="box__slide-items__label" for=""> </label>
+              </div>
+              <label class="box__elements__label" for="t7"></label>
+              <label class="box__elements__label--close box__elements__label--close--six" for="t10"> </label>
+            </div>
+            <div class="box__elements__item"> 
+              <div class="box__slide-items">
+                <label class="box__slide-items__label" for=""> </label>
+                <label class="box__slide-items__label" for=""> </label>
+              </div>
+              <label class="box__elements__label" for="t8"></label>
+              <label class="box__elements__label--close box__elements__label--close--six" for="t10"> </label>
+            </div>
+            <div class="box__elements__item"> 
+              <div class="box__slide-items">
+                <label class="box__slide-items__label" for=""> </label>
+                <label class="box__slide-items__label" for=""> </label>
+              </div>
+              <label class="box__elements__label" for="t9"></label>
+              <label class="box__elements__label--close box__elements__label--close--six" for="t10"> </label>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!--Labels box Rotation-->
+      <section class="rotation"> 
+        <label class="rotation__label" for="r1"> </label>
+        <label class="rotation__label" for="r2"> </label>
+        <label class="rotation__label" for="r3"> </label>
+        <label class="rotation__label" for="r4"> </label>
+        <label class="rotation__label" for="r5"> </label>
+        <label class="rotation__label" for="r6"> </label>
+      </section>
+    </main>
+  </body>
+</html>
